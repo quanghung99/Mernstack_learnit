@@ -1,0 +1,48 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"quanghoa999",
+    "password":"quanghoa"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+content-type: application/json
+ 
+{
+    "username":"quanghoa999",
+    "password":"quanghoa"
+}
+
+###
+POST  http://localhost:5000/api/post
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTVkZDViODY0YTNlZmJhOTQ3Y2VlNmUiLCJpYXQiOjE2MzM1Mzk1MTJ9.P-hgmGMI5_XIHixeRemsrBkRbzl3o5FR0bq3vOVnnvA
+
+{
+    "title": "Newquanghoa",
+    "description": "Newquanghoa",
+    "url": "fb.com",
+    "status": "Learned"
+}
+
+###
+GET http://localhost:5000/api/post
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTVkZDViODY0YTNlZmJhOTQ3Y2VlNmUiLCJpYXQiOjE2MzQwNTcwNjF9.rDVKAZcOqidOnKByfdxGtfHDiZPu5cw5I9-iytdN5yY
+
+###
+PUT http://localhost:5000/api/post/615df5882095b90fd72ec468
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTVkZDViODY0YTNlZmJhOTQ3Y2VlNmUiLCJpYXQiOjE2MzM1NDcyODF9.4uy3p6IiLvUfa1XhzJ7U-ns3Uy3fMrhS2XX-EuaGyCg
+
+{
+    "title": "quanghoaupdate",
+    "description": "quanghoaupdate",
+    "url": "https://google.com"
+}
+
+###
+DELETE http://localhost:5000/api/post/615df2acb9d48297a087bde8
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTVkZDViODY0YTNlZmJhOTQ3Y2VlNmUiLCJpYXQiOjE2MzM1NDcyODF9.4uy3p6IiLvUfa1XhzJ7U-ns3Uy3fMrhS2XX-EuaGyCg
+
