@@ -1,12 +1,12 @@
 import './App.scss';
-import Landing from '../../components/layout/Landing';
-import Dashboard from '../Dashboard';
-import Auth from '../Auth';
+import Landing from './components/layout/Landing';
+import Dashboard from './views/Dashboard';
+import Auth from './views/Auth';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import AuthContextProvider from '../../contexts/AuthContext';
-import ProtectedRoute from '../../components/routing/ProtectedRoute';
-import About from '../About';
-import PostContextProvider from '../../contexts/PostContext';
+import AuthContextProvider from './contexts/AuthContext';
+import ProtectedRoute from './components/routing/ProtectedRoute';
+import About from './views/About';
+import PostContextProvider from './contexts/PostContext';
 
 function App() {
   return (
