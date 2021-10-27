@@ -80,12 +80,10 @@ const Dashboard = () => {
         >
           <img src={createIcon} alt="createIcon" width="60" height="60" />
         </Button>
-        {/* <OverlayTrigger
+        <OverlayTrigger
           placement="left"
           overlay={<Tooltip> Add a new thing to learn </Tooltip>}
-        >
-          
-        </OverlayTrigger> */}
+        ></OverlayTrigger>
       </>
     );
   }
