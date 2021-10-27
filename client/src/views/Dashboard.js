@@ -72,18 +72,19 @@ const Dashboard = () => {
           })}
         </Row>
 
-        <Button
-          className="btn-floating"
-          onClick={SetShowModal.bind(this, true)}
-          width="32"
-          height="32"
-        >
-          <img src={createIcon} alt="createIcon" width="60" height="60" />
-        </Button>
         <OverlayTrigger
           placement="left"
           overlay={<Tooltip> Add a new thing to learn </Tooltip>}
-        ></OverlayTrigger>
+        >
+          <Button
+            className="btn-floating"
+            onClick={SetShowModal.bind(this, true)}
+            width="32"
+            height="32"
+          >
+            <img src={createIcon} alt="createIcon" width="60" height="60" />
+          </Button>
+        </OverlayTrigger>
       </>
     );
   }
