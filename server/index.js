@@ -21,10 +21,16 @@ const connectDB = async () => {
 connectDB();
 const app = express();
 
-// app.use(bodyParser.json()) // for parsing application/json
-// app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.json());
 app.use(cors());
+
+app.use(function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
+app.use(express.json());
 app.use('/api/auth', authRouter);
 app.use('/api/post', postRouter);
 

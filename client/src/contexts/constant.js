@@ -1,7 +1,7 @@
 export const apiUrl =
   process.env.NODE_ENV !== 'production'
     ? 'https://fast-refuge-62315.herokuapp.com/api'
-    : 'somedeployedUrl';
+    : 'https://fast-refuge-62315.herokuapp.com/api';
 
 export const LOCAL_STORAGE_TOKEN_NAME = 'project_learnit';
 export const POST_LOADED_SUCCESS = 'POST_LOADED_SUCCESS';
