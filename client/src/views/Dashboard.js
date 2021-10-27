@@ -103,7 +103,6 @@ const Dashboard = () => {
         pauseOnFocusLoss
         draggable
       />
-      {/* Same as */}
       <ToastContainer />
     </>
   );

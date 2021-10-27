@@ -50,7 +50,7 @@ const UpdateModalPost = () => {
   };
 
   return (
-    <Modal show={ShowModalUpdate} animation={false} onHide={closeModal}>
+    <Modal show={ShowModalUpdate} onHide={closeModal}>
       <Modal.Header closeButton>
         <Modal.Title>Edit your learning</Modal.Title>
       </Modal.Header>
